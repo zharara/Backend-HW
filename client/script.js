@@ -1,15 +1,5 @@
-fetch('http://localhost:3000/greeting?name="zakaria"', {
-    method: 'GET',
-    headers: {
-        'Content-Type': 'application/json',
-    },
-}).then(res => res.json()).then(val => console.log(val))
-    .catch(err => {
-        console.log(err);
-    })
 
-
-fetch('http://localhost:3000/data/', {
+fetch('http://localhost:3000/data', {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json',
@@ -20,7 +10,7 @@ fetch('http://localhost:3000/data/', {
         console.log(err);
     })
 
-fetch('http://localhost:3000/greeting/zakaria', {
+fetch('http://localhost:3000/greeting', {
     method: 'GET',
     headers: {
         'Content-Type': 'application/json',
